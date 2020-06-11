@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { TinaProvider, TinaCMS } from 'tinacms';
+import Hero from './components/Hero';
 
 function App() {
+  const cms = new TinaCMS({
+    enabled: true,
+    sidebar: {
+      hidden: true,
+    },
+    toolbar: { hidden: false },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TinaProvider cms={cms}>
+      <Hero />
+    </TinaProvider>
   );
 }
 
