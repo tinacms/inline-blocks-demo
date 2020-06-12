@@ -1,16 +1,33 @@
 import React from 'react';
-import { InlineTextarea, InlineText } from 'react-tinacms-inline';
+import {
+  InlineTextarea,
+  InlineText,
+  BlocksControls,
+} from 'react-tinacms-inline';
 import '../styles/Hero.css';
 
-export default function Hero() {
+export function Hero(props) {
   return (
-    <div className="hero">
-      <h1>
-        <InlineText name="hero.headline" />
-      </h1>
-      <p>
-        <InlineTextarea name="hero.subtext" focusRing />
-      </p>
-    </div>
+    <BlocksControls index={props.index}>
+      <div className="hero">
+        <h1>
+          <InlineText name="headline" />
+        </h1>
+        <p>
+          <InlineTextarea name="subtext" focusRing />
+        </p>
+      </div>
+    </BlocksControls>
   );
 }
+
+export const hero_template = {
+  type: 'hero',
+  label: 'Hero',
+  defaultItem: {
+    headline: 'Suspended in a Sunbeam',
+    subtext:
+      'Dispassionate extraterrestrial observer are creatures of the cosmos courage of our questions.',
+  },
+  fields: [],
+};
