@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'tinacms';
+import { InlineForm } from 'react-tinacms-inline';
 import Hero from './components/Hero';
 import data from './data/data.json';
 
@@ -14,5 +15,9 @@ export default function Home() {
 
   const [pageData, form] = useForm(formConfig);
 
-  return <Hero data={pageData.hero} />;
+  return (
+    <InlineForm form={form}>
+      <Hero data={pageData.hero} />
+    </InlineForm>
+  );
 }
