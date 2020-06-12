@@ -1,7 +1,6 @@
 import React from 'react';
 import { TinaProvider, TinaCMS } from 'tinacms';
-import Hero from './components/Hero';
-import data from './data/data.json';
+import Home from './Home';
 
 function App() {
   const cms = new TinaCMS({
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <TinaProvider cms={cms}>
-      <Hero data={data.hero} />
+      <Home />
     </TinaProvider>
   );
 }

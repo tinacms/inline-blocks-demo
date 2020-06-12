@@ -9,9 +9,13 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-is": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-tinacms-inline": "^0.7.0",
     "styled-components": "^5.1.1",
-    "tinacms": "^0.21.1"
+    "tinacms": "^0.21.1",
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
