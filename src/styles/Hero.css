@@ -5,7 +5,8 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  padding: 2rem 0;
 }
 
 .hero h1,

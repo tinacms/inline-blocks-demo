@@ -8,13 +8,17 @@ import '../styles/Hero.css';
 
 export function Hero(props) {
   return (
-    <BlocksControls index={props.index}>
+    <BlocksControls
+      index={props.index}
+      focusRing={{ offset: 0 }}
+      insetControls={true}
+    >
       <div className="hero">
         <h1>
-          <InlineText name="headline" />
+          <InlineText name="headline" focusRing={false} />
         </h1>
         <p>
-          <InlineTextarea name="subtext" focusRing />
+          <InlineTextarea name="subtext" focusRing={false} />
         </p>
       </div>
     </BlocksControls>
