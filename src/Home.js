@@ -8,14 +8,13 @@ export default function Home() {
   const formConfig = {
     id: './data/data.json',
     initialValues: {
-      hero: data.hero,
       blocks: data.blocks,
     },
     onSubmit() {},
   };
+  console.log({ data });
 
   const [pageData, form] = useForm(formConfig);
-  console.log({ pageData });
 
   return (
     <div className="home">
