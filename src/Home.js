@@ -13,11 +13,11 @@ export default function Home() {
     onSubmit() {},
   };
 
-  const [pageData, form] = useForm(formConfig);
+  const [, form] = useForm(formConfig);
 
   return (
-    <InlineForm form={form}>
-      <Hero data={pageData.hero} />
+    <InlineForm form={form} initialStatus="active">
+      <Hero />
     </InlineForm>
   );
 }

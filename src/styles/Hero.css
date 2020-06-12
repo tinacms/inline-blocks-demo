@@ -11,4 +11,5 @@
 .hero h1,
 .hero p {
   max-width: 600px;
+  width: 100%;
 }
