@@ -46,9 +46,27 @@ export const images_template = {
   },
   fields: [
     {
+      name: 'left.src',
+      label: 'Left-Hand Image',
+      component: 'image',
+      parse: (filename) => `/assets/${filename}`,
+      uploadDir: () => '/assets/',
+      previewSrc: () => imageLeft,
+      focusRing: false,
+    },
+    {
       name: 'left.alt',
       label: 'Left-Hand Image Alt Text',
       component: 'text',
+    },
+    {
+      name: 'right.src',
+      label: 'Right-Hand Image',
+      component: 'image',
+      parse: (filename) => `/assets/${filename}`,
+      uploadDir: () => '/assets/',
+      previewSrc: () => imageRight,
+      focusRing: false,
     },
     {
       name: 'right.alt',
