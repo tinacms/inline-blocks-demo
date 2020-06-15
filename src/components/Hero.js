@@ -4,7 +4,7 @@ import {
   InlineText,
   BlocksControls,
 } from 'react-tinacms-inline';
-import '../styles/Hero.css';
+import '../styles/hero.css';
 
 export function Hero({ data, index }) {
   return (
@@ -33,7 +33,6 @@ export function Hero({ data, index }) {
 }
 
 export const hero_template = {
-  type: 'hero',
   label: 'Hero',
   defaultItem: {
     headline: 'Suspended in a Sunbeam',
