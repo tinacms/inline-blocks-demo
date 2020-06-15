@@ -3,6 +3,7 @@ import { useForm } from 'tinacms';
 import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
 import { Hero, hero_template } from './components/Hero';
 import { Images, images_template } from './components/Images';
+import { Paragraph, paragraph_template } from './components/Paragraph';
 import data from './data/data.json';
 
 export default function Home() {
@@ -34,5 +35,9 @@ const HOME_BLOCKS = {
   images: {
     Component: Images,
     template: images_template,
+  },
+  paragraph: {
+    Component: Paragraph,
+    template: paragraph_template,
   },
 };
