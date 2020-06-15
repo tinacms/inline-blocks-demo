@@ -16,7 +16,8 @@ export function Hero({ data, index }) {
       <div
         className="hero"
         style={{
-          backgroundColor: `${data.background_color}`,
+          color: `${data.text_color || '#000'}`,
+          backgroundColor: `${data.background_color || 'aliceblue'}`,
           textAlign: `${data.align}`,
           alignItems: `${data.align === 'left' ? 'start' : data.align}`,
         }}
@@ -38,7 +39,8 @@ export const hero_template = {
     headline: 'Suspended in a Sunbeam',
     subtext:
       'Dispassionate extraterrestrial observer are creatures of the cosmos courage of our questions.',
-    background_color: 'aliceblue',
+    background_color: 'rgb(5, 30, 38)',
+    text_color: '#fffaf4',
     align: 'center',
   },
   fields: [
@@ -47,7 +49,20 @@ export const hero_template = {
       label: 'Background Color',
       component: 'color',
       widget: 'block',
-      colors: ['aliceblue', 'antiquewhite', 'aqua', 'azure', 'darkslategray'],
+      colors: [
+        'black',
+        'aliceblue',
+        'antiquewhite',
+        'aqua',
+        'azure',
+        'darkslategray',
+      ],
+    },
+    {
+      name: 'text_color',
+      label: 'Text Color',
+      component: 'select',
+      options: ['black', 'white'],
     },
     {
       name: 'align',
