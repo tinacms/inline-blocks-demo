@@ -4,6 +4,7 @@ import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
 import { Hero, hero_template } from './components/Hero';
 import { Images, images_template } from './components/Images';
 import { Paragraph, paragraph_template } from './components/Paragraph';
+import { FeaturesList, features_list_template } from './components/Features';
 import data from './data/data.json';
 
 export default function Home() {
@@ -14,9 +15,8 @@ export default function Home() {
     },
     onSubmit() {},
   };
-  console.log({ data });
 
-  const [pageData, form] = useForm(formConfig);
+  const [, form] = useForm(formConfig);
 
   return (
     <div className="home">
@@ -39,5 +39,9 @@ const HOME_BLOCKS = {
   paragraph: {
     Component: Paragraph,
     template: paragraph_template,
+  },
+  features: {
+    Component: FeaturesList,
+    template: features_list_template,
   },
 };
