@@ -37,8 +37,7 @@ export const hero_template = {
   label: 'Hero',
   defaultItem: {
     headline: 'Suspended in a Sunbeam',
-    subtext:
-      'Dispassionate extraterrestrial observer are creatures of the cosmos courage of our questions.',
+    subtext: 'Dispassionate extraterrestrial observer',
     background_color: 'rgb(5, 30, 38)',
     text_color: '#fffaf4',
     align: 'center',

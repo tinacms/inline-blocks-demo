@@ -35,10 +35,14 @@ export const images_template = {
   label: 'Image Diptych',
   defaultItem: {
     _template: 'images',
-    src_left: '../assets/ivan-bandura-unsplash.jpg',
-    alt_left: 'Some alt text',
-    src_right: '../assets/martin-sanchez-unsplash.jpg',
-    alt_right: 'Some alt text',
+    left: {
+      src: '../assets/ivan-bandura-unsplash.jpg',
+      alt: 'Some alt text',
+    },
+    right: {
+      src: '../assets/martin-sanchez-unsplash.jpg',
+      alt: 'Some alt text',
+    },
   },
   fields: [
     {
