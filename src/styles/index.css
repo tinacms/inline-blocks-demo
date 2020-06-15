@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fffaf4;
 }
 
 code {
@@ -14,4 +16,8 @@ code {
 
 .home {
   min-height: 90vh;
+}
+
+h1 {
+  font-size: 3rem;
 }
