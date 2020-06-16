@@ -11,11 +11,11 @@
     {
       "_template": "images",
       "left": {
-        "src": "../assets/ivan-bandura-unsplash.jpg",
+        "src": "../assets/ivan-bandura-unsplash-square.jpg",
         "alt": "Some alt text"
       },
       "right": {
-        "src": "../assets/martin-sanchez-unsplash.jpg",
+        "src": "../assets/martin-sanchez-unsplash-square.jpg",
         "alt": "Some alt text"
       }
     },
