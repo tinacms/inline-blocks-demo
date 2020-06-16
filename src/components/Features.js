@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {
   BlocksControls,
   InlineBlocks,
@@ -15,22 +14,15 @@ export function FeaturesList({ index }) {
       focusRing={{ offset: 0 }}
       insetControls={true}
     >
-      <StyledInlineBlocks
+      <InlineBlocks
         name="features"
         blocks={FEATURE_BLOCKS}
         direction="row"
+        className="feature-list"
       />
     </BlocksControls>
   );
 }
-
-const StyledInlineBlocks = styled(InlineBlocks)`
-  padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  grid-template-rows: auto;
-`;
 
 export const features_list_template = {
   label: 'Feature List',
@@ -39,17 +31,17 @@ export const features_list_template = {
     features: [
       {
         _template: 'feature',
-        heading: 'heading',
+        heading: 'heading 1',
         supporting_copy: 'supporting copy',
       },
       {
         _template: 'feature',
-        heading: 'heading2',
+        heading: 'heading 2',
         supporting_copy: 'supporting copy',
       },
       {
         _template: 'feature',
-        heading: 'heading3',
+        heading: 'heading 3',
         supporting_copy: 'supporting copy',
       },
     ],
