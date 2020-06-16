@@ -1,7 +1,7 @@
 import React from 'react';
 import { BlocksControls, InlineImage } from 'react-tinacms-inline';
-import imageLeft from '../assets/ivan-bandura-unsplash.jpg';
-import imageRight from '../assets/martin-sanchez-unsplash.jpg';
+import imageLeft from '../assets/ivan-bandura-unsplash-square.jpg';
+import imageRight from '../assets/martin-sanchez-unsplash-square.jpg';
 import '../styles/images.css';
 
 export function Images({ index }) {
@@ -36,11 +36,11 @@ export const images_template = {
   defaultItem: {
     _template: 'images',
     left: {
-      src: '../assets/ivan-bandura-unsplash.jpg',
+      src: '../assets/ivan-bandura-unsplash-square.jpg',
       alt: 'Some alt text',
     },
     right: {
-      src: '../assets/martin-sanchez-unsplash.jpg',
+      src: '../assets/martin-sanchez-unsplash-square.jpg',
       alt: 'Some alt text',
     },
   },
