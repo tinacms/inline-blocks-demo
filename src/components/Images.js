@@ -49,7 +49,7 @@ export const images_template = {
       component: "image",
       parse: (filename) => `/${filename}`,
       uploadDir: () => "/",
-      previewSrc: "/ivan-bandura-unsplash-square.jpg",
+      previewSrc: () => "/ivan-bandura-unsplash-square.jpg",
       focusRing: false,
     },
     {
@@ -63,7 +63,7 @@ export const images_template = {
       component: "image",
       parse: (filename) => `/${filename}`,
       uploadDir: () => "/",
-      previewSrc: "/martin-sanchez-unsplash-square.jpg",
+      previewSrc: () => "/martin-sanchez-unsplash-square.jpg",
       focusRing: false,
     },
     {
