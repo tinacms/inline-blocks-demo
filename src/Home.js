@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from 'tinacms';
+import { Images, images_template } from './components/Images';
+import { Paragraph, paragraph_template } from './components/Paragraph';
 
 // 1. Import `InlineBlocks`
 import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
@@ -33,5 +35,13 @@ const HOME_BLOCKS = {
   hero: {
     Component: Hero,
     template: hero_template,
+  },
+  images: {
+    Component: Images,
+    template: images_template,
+  },
+  paragraph: {
+    Component: Paragraph,
+    template: paragraph_template,
   },
 };

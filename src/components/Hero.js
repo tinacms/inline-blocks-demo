@@ -6,7 +6,7 @@ export function Hero({ data, index }) {
   return (
     <BlocksControls
       index={index}
-      focusRing={{ offset: { x: -5, y: -20 }, borderRadius: 8 }}
+      focusRing={{ offset: 0 }}
       insetControls={true}
     >
       {/** 2. Add dynamic inline styles */}
