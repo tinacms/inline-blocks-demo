@@ -1,15 +1,6 @@
 .feature-list {
-  padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   grid-template-rows: auto;
-}
-
-.feature {
-  padding: 0.5rem;
-}
-
-.feature p {
-  overflow: auto;
 }

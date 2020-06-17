@@ -9,21 +9,23 @@ export function Images({ index }) {
       focusRing={{ offset: 0 }}
       insetControls={true}
     >
-      <div className="image-diptych">
-        <InlineImage
-          name="left.src"
-          parse={(filename) => `${filename}`}
-          uploadDir={() => "/"}
-          previewSrc={(formValues) => `${formValues.blocks[index].left.src}`}
-          focusRing={false}
-        />
-        <InlineImage
-          name="right.src"
-          parse={(filename) => `/${filename}`}
-          uploadDir={() => "/"}
-          previewSrc={(formValues) => `${formValues.blocks[index].right.src}`}
-          focusRing={false}
-        />
+      <div className="wrapper">
+        <div className="image-diptych">
+          <InlineImage
+            name="left.src"
+            parse={(filename) => `${filename}`}
+            uploadDir={() => "/"}
+            previewSrc={(formValues) => `${formValues.blocks[index].left.src}`}
+            focusRing={false}
+          />
+          <InlineImage
+            name="right.src"
+            parse={(filename) => `/${filename}`}
+            uploadDir={() => "/"}
+            previewSrc={(formValues) => `${formValues.blocks[index].right.src}`}
+            focusRing={false}
+          />
+        </div>
       </div>
     </BlocksControls>
   );
