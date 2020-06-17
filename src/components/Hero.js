@@ -1,20 +1,20 @@
 import React from 'react';
-// 1. Import `InlineTextarea`
-import { InlineTextarea } from 'react-tinacms-inline';
+import { InlineTextarea, BlocksControls } from 'react-tinacms-inline';
 import '../styles/hero.css';
 
-export function Hero() {
-  // 2. Replace `data` with Inline Fields
+export function Hero({ index }) {
   return (
-    <div className="hero">
-      <div className="wrapper wrapper--narrow">
-        <h1>
-          <InlineTextarea name="hero.headline" />
-        </h1>
-        <p>
-          <InlineTextarea name="hero.subtext" />
-        </p>
+    <BlocksControls index={index}>
+      <div className="hero">
+        <div className="wrapper wrapper--narrow">
+          <h1>
+            <InlineTextarea name="headline" />
+          </h1>
+          <p>
+            <InlineTextarea name="subtext" />
+          </p>
+        </div>
       </div>
-    </div>
+    </BlocksControls>
   );
 }
