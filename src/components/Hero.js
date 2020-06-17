@@ -4,14 +4,18 @@ import '../styles/hero.css';
 
 export function Hero({ index }) {
   return (
-    <BlocksControls index={index}>
+    <BlocksControls
+      index={index}
+      focusRing={{ offset: { x: -10, y: -18 }, borderRadius: 8 }}
+      insetControls={true}
+    >
       <div className="hero">
         <div className="wrapper wrapper--narrow">
           <h1>
-            <InlineTextarea name="headline" />
+            <InlineTextarea name="headline" focusRing={false} />
           </h1>
           <p>
-            <InlineTextarea name="subtext" />
+            <InlineTextarea name="subtext" focusRing={false} />
           </p>
         </div>
       </div>
