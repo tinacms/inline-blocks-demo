@@ -1,11 +1,11 @@
 import React from 'react';
-// 1. Import `useForm`
 import { useForm } from 'tinacms';
+// 1. Import `InlineForm`
+import { InlineForm } from 'react-tinacms-inline';
 import { Hero } from './components/Hero';
 import data from './data/data.json';
 
 export default function Home() {
-  // 2. Create a config object
   const formConfig = {
     id: './data/data.json',
     initialValues: {
@@ -14,13 +14,14 @@ export default function Home() {
     onSubmit() {},
   };
 
-  // 3. Call `useForm` with the config object.
   const [pageData, form] = useForm(formConfig);
 
-  // 4. Use the return data now connected with a TinaCMS form
+  // 2. Wrap `InlineForm` around `Hero`, pass the form
   return (
     <div className="home">
-      <Hero data={pageData.hero} />;
+      <InlineForm form={form}>
+        <Hero data={pageData.hero} />
+      </InlineForm>
     </div>
   );
 }
