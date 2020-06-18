@@ -51,7 +51,12 @@ export const images_template = {
       component: 'image',
       parse: (filename) => `/${filename}`,
       uploadDir: () => '/',
-      previewSrc: () => '/ivan-bandura-unsplash-square.jpg',
+      previewSrc: (formValues, input) => {
+        // Assumes the block is only one level deep
+        const index = input.field.name.split('.')[1];
+        const currentBlockImage = formValues.blocks[index].left.src;
+        return currentBlockImage;
+      },
       focusRing: false,
     },
     {
@@ -65,7 +70,11 @@ export const images_template = {
       component: 'image',
       parse: (filename) => `/${filename}`,
       uploadDir: () => '/',
-      previewSrc: () => '/martin-sanchez-unsplash-square.jpg',
+      previewSrc: (formValues, input) => {
+        const index = input.field.name.split('.')[1];
+        const currentBlockImage = formValues.blocks[index].right.src;
+        return currentBlockImage;
+      },
       focusRing: false,
     },
     {
