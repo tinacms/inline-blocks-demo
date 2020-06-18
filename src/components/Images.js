@@ -37,11 +37,11 @@ export const images_template = {
     _template: 'images',
     left: {
       src: '/ivan-bandura-unsplash-square.jpg',
-      alt: 'Some alt text',
+      alt: 'ocean',
     },
     right: {
       src: '/martin-sanchez-unsplash-square.jpg',
-      alt: 'Some alt text',
+      alt: 'dunes',
     },
   },
   fields: [
