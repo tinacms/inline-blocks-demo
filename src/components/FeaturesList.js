@@ -1,11 +1,8 @@
 // 1. Import new `InlineTextarea` field
 import React from 'react';
-import {
-  BlocksControls,
-  InlineBlocks,
-  InlineTextarea,
-} from 'react-tinacms-inline';
+import { BlocksControls, InlineBlocks } from 'react-tinacms-inline';
 import '../styles/features.css';
+import { Feature, feature_template } from './Feature';
 
 export function FeaturesList({ index }) {
   return (
@@ -53,35 +50,7 @@ export const features_list_template = {
   fields: [],
 };
 
-// 4. Create the Feature Block Component
-function Feature({ index }) {
-  return (
-    <BlocksControls index={index}>
-      <div className="feature">
-        <h3>
-          <InlineTextarea name="heading" focusRing={false} />
-        </h3>
-        <p>
-          <InlineTextarea name="supporting_copy" focusRing={false} />
-        </p>
-      </div>
-    </BlocksControls>
-  );
-}
-
-// 5. Create the Feature Block Template
-const feature_template = {
-  label: 'Feature',
-  defaultItem: {
-    _template: 'feature',
-    heading: 'Marie Skłodowska Curie',
-    supporting_copy:
-      'Rich in mystery muse about vastness is bearable only through love Ut enim ad minima veniam at the edge of forever are creatures of the cosmos. ',
-  },
-  fields: [],
-};
-
-// 6. Define the 'block', with component and template
+// 4. Define the 'block', with component and template
 const FEATURE_BLOCKS = {
   feature: {
     Component: Feature,

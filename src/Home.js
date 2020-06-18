@@ -2,7 +2,10 @@ import React from 'react';
 import { useForm } from 'tinacms';
 import { Images, images_template } from './components/Images';
 import { Paragraph, paragraph_template } from './components/Paragraph';
-import { FeaturesList, features_list_template } from './components/Features';
+import {
+  FeaturesList,
+  features_list_template,
+} from './components/FeaturesList';
 
 // 1. Import `InlineBlocks`
 import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
