@@ -9,7 +9,6 @@ export function Hero({ data, index }) {
       focusRing={{ offset: 0 }}
       insetControls={true}
     >
-      {/** 2. Add dynamic inline styles */}
       <div
         className="hero"
         style={{

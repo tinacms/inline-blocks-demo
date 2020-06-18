@@ -1,4 +1,3 @@
-// 1. Import new `InlineTextarea` field
 import React from 'react';
 import { BlocksControls, InlineBlocks } from 'react-tinacms-inline';
 import '../styles/features.css';
@@ -12,7 +11,6 @@ export function FeaturesList({ index }) {
       insetControls={true}
     >
       <div className="wrapper">
-        {/* 2. Pass FEATURE_BLOCKS to blocks, defined further down */}
         <InlineBlocks
           name="features"
           blocks={FEATURE_BLOCKS}
@@ -24,7 +22,6 @@ export function FeaturesList({ index }) {
   );
 }
 
-// 3. Fill in default 'Feature' block values
 export const features_list_template = {
   label: 'Feature List',
   defaultItem: {
@@ -50,7 +47,6 @@ export const features_list_template = {
   fields: [],
 };
 
-// 4. Define the 'block', with component and template
 const FEATURE_BLOCKS = {
   feature: {
     Component: Feature,
