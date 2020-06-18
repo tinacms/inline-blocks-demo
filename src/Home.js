@@ -2,10 +2,7 @@ import React from 'react';
 import { useForm } from 'tinacms';
 import { Images, images_template } from './components/Images';
 import { Paragraph, paragraph_template } from './components/Paragraph';
-import {
-  FeaturesList,
-  features_list_template,
-} from './components/FeaturesList';
+import { FeatureList, feature_list_template } from './components/FeatureList';
 
 import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
 import { Hero, hero_template } from './components/Hero';
@@ -45,7 +42,7 @@ const HOME_BLOCKS = {
     template: paragraph_template,
   },
   features: {
-    Component: FeaturesList,
-    template: features_list_template,
+    Component: FeatureList,
+    template: feature_list_template,
   },
 };
