@@ -36,25 +36,11 @@ export const hero_template = {
   defaultItem: {
     headline: 'Suspended in a Sunbeam',
     subtext: 'Dispassionate extraterrestrial observer',
-    background_color: 'rgb(5, 30, 38)',
+    background_color: '#051e26',
     text_color: '#fffaf4',
     align: 'center',
   },
   fields: [
-    {
-      name: 'background_color',
-      label: 'Background Color',
-      component: 'color',
-      widget: 'block',
-      colors: [
-        'rgb(5, 30, 38)',
-        'aliceblue',
-        'antiquewhite',
-        'aqua',
-        'azure',
-        'darkslategray',
-      ],
-    },
     {
       name: 'text_color',
       label: 'Text Color',
@@ -66,6 +52,13 @@ export const hero_template = {
       label: 'Alignment',
       component: 'select',
       options: ['center', 'left'],
+    },
+    {
+      name: 'background_color',
+      label: 'Background Color',
+      component: 'color',
+      widget: 'block',
+      colors: ['#051e26', '#f2dfc6', '#cfdcc8', '#ebbbbb', '#8a1414'],
     },
   ],
 };
