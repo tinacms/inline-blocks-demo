@@ -1,5 +1,5 @@
 import React from 'react';
-import { useForm } from 'tinacms';
+import { useForm, usePlugin } from 'tinacms';
 import { Images, images_template } from './components/Images';
 import { Paragraph, paragraph_template } from './components/Paragraph';
 import { FeatureList, feature_list_template } from './components/FeatureList';
@@ -18,6 +18,8 @@ export default function Home() {
   };
 
   const [, form] = useForm(formConfig);
+
+  usePlugin(form);
 
   return (
     <div className="home">
