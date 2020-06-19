@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm, usePlugin } from 'tinacms';
-import { Images, images_template } from './components/Images';
-import { Paragraph, paragraph_template } from './components/Paragraph';
-import { FeatureList, feature_list_template } from './components/FeatureList';
+import { imagesBlock } from './components/Images';
+import { paragraphBlock } from './components/Paragraph';
+import { featureListBlock } from './components/FeatureList';
 
 import { InlineForm, InlineBlocks } from 'react-tinacms-inline';
-import { Hero, hero_template } from './components/Hero';
+import { heroBlock } from './components/Hero';
 import data from './data/data.json';
 
 export default function Home() {
@@ -31,20 +31,8 @@ export default function Home() {
 }
 
 const HOME_BLOCKS = {
-  hero: {
-    Component: Hero,
-    template: hero_template,
-  },
-  images: {
-    Component: Images,
-    template: images_template,
-  },
-  paragraph: {
-    Component: Paragraph,
-    template: paragraph_template,
-  },
-  features: {
-    Component: FeatureList,
-    template: feature_list_template,
-  },
+  hero: heroBlock,
+  images: imagesBlock,
+  paragraph: paragraphBlock,
+  features: featureListBlock,
 };

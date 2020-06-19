@@ -2,7 +2,7 @@ import React from 'react';
 import { BlocksControls, InlineImage } from 'react-tinacms-inline';
 import '../styles/images.css';
 
-export function Images({ index }) {
+function Images({ index }) {
   return (
     <BlocksControls
       index={index}
@@ -31,7 +31,7 @@ export function Images({ index }) {
   );
 }
 
-export const images_template = {
+const images_template = {
   label: 'Image Diptych',
   defaultItem: {
     _template: 'images',
@@ -83,4 +83,9 @@ export const images_template = {
       component: 'text',
     },
   ],
+};
+
+export const imagesBlock = {
+  Component: Images,
+  template: images_template,
 };
