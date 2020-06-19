@@ -1,5 +1,5 @@
 import React from 'react';
-import { useForm, usePlugin } from 'tinacms';
+import { useForm, usePlugin, useCMS } from 'tinacms';
 import { imagesBlock } from './components/Images';
 import { paragraphBlock } from './components/Paragraph';
 import { featureListBlock } from './components/FeatureList';
@@ -9,12 +9,15 @@ import { heroBlock } from './components/Hero';
 import data from './data/data.json';
 
 export default function Home() {
+  const cms = useCMS();
   const formConfig = {
     id: './data/data.json',
     initialValues: {
       blocks: data.blocks,
     },
-    onSubmit() {},
+    onSubmit() {
+      cms.alerts.success('Saved content!');
+    },
   };
 
   const [, form] = useForm(formConfig);
