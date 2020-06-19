@@ -16,7 +16,7 @@ export default function Home() {
       blocks: data.blocks,
     },
     onSubmit() {
-      cms.alerts.success('Saved content!');
+      cms.alerts.success('Saved!');
     },
   };
 
