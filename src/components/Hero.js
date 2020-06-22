@@ -5,7 +5,7 @@ import '../styles/hero.css';
 export function Hero({ text_color, background_color, align }) {
   return (
     <div
-      className='hero'
+      className="hero"
       style={{
         color: text_color || '#000',
         backgroundColor: background_color || 'aliceblue',
@@ -13,12 +13,12 @@ export function Hero({ text_color, background_color, align }) {
         justifyContent: align === 'left' ? 'start' : align,
       }}
     >
-      <div className='wrapper wrapper--narrow'>
+      <div className="wrapper wrapper--narrow">
         <h1>
-          <InlineTextarea name='headline' focusRing={false} />
+          <InlineTextarea name="headline" focusRing={false} />
         </h1>
         <p>
-          <InlineTextarea name='subtext' focusRing={false} />
+          <InlineTextarea name="subtext" focusRing={false} />
         </p>
       </div>
     </div>
@@ -27,11 +27,7 @@ export function Hero({ text_color, background_color, align }) {
 
 export const heroBlock = {
   Component: ({ index, data }) => (
-    <BlocksControls
-      index={index}
-      focusRing={{ offset: 0 }}
-      insetControls={true}
-    >
+    <BlocksControls index={index} focusRing={{ offset: 0 }} insetControls>
       <Hero {...data} />
     </BlocksControls>
   ),

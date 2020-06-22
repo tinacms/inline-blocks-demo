@@ -4,11 +4,7 @@ import '../styles/paragraph.css';
 
 function Paragraph({ index }) {
   return (
-    <BlocksControls
-      index={index}
-      focusRing={{ offset: 0 }}
-      insetControls={true}
-    >
+    <BlocksControls index={index} focusRing={{ offset: 0 }} insetControls>
       <div className="paragraph__background">
         <div className="wrapper wrapper--narrow">
           <p className="paragraph__text">

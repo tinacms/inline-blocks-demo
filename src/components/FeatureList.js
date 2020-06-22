@@ -5,11 +5,7 @@ import { featureBlock } from './Feature';
 
 function featureList({ index }) {
   return (
-    <BlocksControls
-      index={index}
-      focusRing={{ offset: 0 }}
-      insetControls={true}
-    >
+    <BlocksControls index={index} focusRing={{ offset: 0 }} insetControls>
       <div className="wrapper">
         <InlineBlocks
           name="features"

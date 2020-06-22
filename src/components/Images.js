@@ -4,11 +4,7 @@ import '../styles/images.css';
 
 function Images({ index }) {
   return (
-    <BlocksControls
-      index={index}
-      focusRing={{ offset: 0 }}
-      insetControls={true}
-    >
+    <BlocksControls index={index} focusRing={{ offset: 0 }} insetControls>
       <div className="wrapper">
         <div className="image-diptych">
           <InlineImage
