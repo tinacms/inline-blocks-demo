@@ -12,9 +12,7 @@ export default function Home() {
   const cms = useCMS();
   const formConfig = {
     id: './data/data.json',
-    initialValues: {
-      blocks: data.blocks,
-    },
+    initialValues: data,
     onSubmit() {
       cms.alerts.success('Saved!');
     },
