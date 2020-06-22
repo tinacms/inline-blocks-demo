@@ -17,7 +17,7 @@ function Feature({ index }) {
   );
 }
 
-export const FeatureBlock = {
+export const featureBlock = {
   Component: Feature,
   template: {
     label: 'Feature',
