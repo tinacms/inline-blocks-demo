@@ -2,23 +2,23 @@ import React from 'react';
 import { InlineTextarea, BlocksControls } from 'react-tinacms-inline';
 import '../styles/hero.css';
 
-export function Hero({ data }) {
+export function Hero({ text_color, background_color, align }) {
   return (
     <div
-      className="hero"
+      className='hero'
       style={{
-        color: `${data.text_color || '#000'}`,
-        backgroundColor: `${data.background_color || 'aliceblue'}`,
-        textAlign: `${data.align}`,
-        justifyContent: `${data.align === 'left' ? 'start' : data.align}`,
+        color: text_color || '#000',
+        backgroundColor: background_color || 'aliceblue',
+        textAlign: align,
+        justifyContent: align === 'left' ? 'start' : align,
       }}
     >
-      <div className="wrapper wrapper--narrow">
+      <div className='wrapper wrapper--narrow'>
         <h1>
-          <InlineTextarea name="headline" focusRing={false} />
+          <InlineTextarea name='headline' focusRing={false} />
         </h1>
         <p>
-          <InlineTextarea name="subtext" focusRing={false} />
+          <InlineTextarea name='subtext' focusRing={false} />
         </p>
       </div>
     </div>
@@ -32,7 +32,7 @@ export const heroBlock = {
       focusRing={{ offset: 0 }}
       insetControls={true}
     >
-      <Hero data={data} />
+      <Hero {...data} />
     </BlocksControls>
   ),
   template: {
