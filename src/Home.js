@@ -23,9 +23,9 @@ export default function Home() {
   usePlugin(form);
 
   return (
-    <div className="home">
-      <InlineForm form={form} initialStatus="active">
-        <InlineBlocks name="blocks" blocks={HOME_BLOCKS} />
+    <div className='home'>
+      <InlineForm form={form} initialStatus='active'>
+        <InlineBlocks name='blocks' blocks={HOME_BLOCKS} />
       </InlineForm>
     </div>
   );
