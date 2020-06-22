@@ -3,7 +3,7 @@ import { BlocksControls, InlineBlocks } from 'react-tinacms-inline';
 import '../styles/features.css';
 import { featureBlock } from './Feature';
 
-function FeatureList({ index }) {
+function featureList({ index }) {
   return (
     <BlocksControls
       index={index}
@@ -23,7 +23,7 @@ function FeatureList({ index }) {
 }
 
 const FEATURE_BLOCKS = {
-  feature: FeatureBlock,
+  feature: featureBlock,
 };
 
 export const featureListBlock = {
