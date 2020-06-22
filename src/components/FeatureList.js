@@ -3,7 +3,7 @@ import { BlocksControls, InlineBlocks } from 'react-tinacms-inline';
 import '../styles/features.css';
 import { featureBlock } from './Feature';
 
-function featureList({ index }) {
+function FeatureList({ index }) {
   return (
     <BlocksControls index={index} focusRing={{ offset: 0 }} insetControls>
       <div className="wrapper">
@@ -23,7 +23,7 @@ const FEATURE_BLOCKS = {
 };
 
 export const featureListBlock = {
-  Component: featureList,
+  Component: FeatureList,
   template: {
     label: 'Feature List',
     defaultItem: {
