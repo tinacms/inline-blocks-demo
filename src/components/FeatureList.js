@@ -12,6 +12,7 @@ function FeatureList({ index }) {
           blocks={FEATURE_BLOCKS}
           direction="row"
           className="feature-list"
+          max={3}
         />
       </div>
     </BlocksControls>
