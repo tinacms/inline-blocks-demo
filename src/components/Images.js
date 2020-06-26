@@ -50,7 +50,6 @@ export const imagesBlock = {
         parse: (filename) => `/${filename}`,
         uploadDir: () => '/',
         previewSrc: (formValues, input) => {
-          // Assumes the block is only one level deep
           const index = input.field.name.split('.')[1];
           const currentBlockImage = formValues.blocks[index].left.src;
           return currentBlockImage;
