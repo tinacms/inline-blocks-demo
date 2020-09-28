@@ -1,4 +1,4 @@
-export class DummyMediaStore {
+export default class DummyMediaStore {
   accept = '*';
   async persist() {
     alert('Cannot upload new files without a backend');
@@ -10,12 +10,14 @@ export class DummyMediaStore {
     const items = [
       {
         id: 'img-left',
+        type: 'file',
         filename: 'ivan-bandura-unsplash-square.jpg',
         directory: '/public',
         previewSrc: '/ivan-bandura-unsplash-square.jpg',
       },
       {
         id: 'img-right',
+        type: 'file',
         filename: 'martin-sanchez-unsplash-square.jpg',
         directory: '/public',
         previewSrc: '/martin-sanchez-unsplash-square.jpg',
