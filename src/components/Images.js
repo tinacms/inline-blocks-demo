@@ -11,7 +11,6 @@ function Images({ data, index }) {
             name="left.src"
             parse={(media) => `/${media.filename}`}
             uploadDir={() => '/public'}
-            previewSrc={(src) => src}
             focusRing={false}
             alt={data.left.alt}
           />
@@ -19,7 +18,6 @@ function Images({ data, index }) {
             name="right.src"
             parse={(media) => `/${media.filename}`}
             uploadDir={() => '/public'}
-            previewSrc={(src) => src}
             focusRing={false}
             alt={data.right.alt}
           />
@@ -51,7 +49,6 @@ export const imagesBlock = {
         component: 'image',
         parse: (media) => `/${media.filename}`,
         uploadDir: () => '/public',
-        previewSrc: (src) => src,
         focusRing: false,
       },
       {
@@ -65,7 +62,6 @@ export const imagesBlock = {
         component: 'image',
         parse: (media) => `/${media.filename}`,
         uploadDir: () => '/public',
-        previewSrc: (src) => src,
         focusRing: false,
       },
       {
