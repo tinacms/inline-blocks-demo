@@ -13,9 +13,9 @@
     "react-dropzone": "^11.0.1",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.1",
-    "react-tinacms-inline": "^0.8.0",
+    "react-tinacms-inline": "^0.31.0-alpha.4",
     "styled-components": "^5.1.1",
-    "tinacms": "^0.21.2",
+    "tinacms": "^0.31.0-alpha.4",
     "typescript": "^3.9.5",
     "yarn.lock": "^0.0.1-security"
   },
